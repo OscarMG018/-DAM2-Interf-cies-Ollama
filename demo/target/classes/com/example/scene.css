@@ -1,0 +1,76 @@
+.message {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #000000;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 17px;
+    -fx-font-family: "Arial";
+    -fx-wrap-text: true;
+    -fx-alignment: center;
+
+}
+
+.user-message {
+    -fx-background-color: #007bff;
+    -fx-text-fill: white;
+}
+
+.llm-response {
+    -fx-background-color: #f8f9fa;
+    -fx-text-fill: #212529;
+}
+
+.user-container {
+    -fx-alignment: center-right;
+    -fx-padding: 5px;
+}
+
+.llm-container {
+    -fx-alignment: center-left;
+    -fx-padding: 5px;
+}
+
+.Button {
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.image-file {
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.image-file-name {
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+    -fx-font-family: "Arial";
+}
+
+.image-file-image {
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.image-file-delete {
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+

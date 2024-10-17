@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller">
+   <children>
+      <HBox alignment="CENTER" prefHeight="30.0" prefWidth="600.0">
+         <children>
+            <ChoiceBox fx:id="ResponseType" prefWidth="150.0" />
+         </children></HBox>
+      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <content>
+            <VBox fx:id="ChatBox" maxHeight="1.7976931348623157E308" prefHeight="57.0" prefWidth="582.0" spacing="5.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding></VBox>
+         </content>
+      </ScrollPane>
+      <HBox fx:id="FilesBox" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="31.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Button fx:id="ClearButton" minWidth="-Infinity" mnemonicParsing="false" onAction="#ClearChatHistory" prefHeight="25.0" styleClass="Button" />
+            <Button fx:id="LoadFileButton" minWidth="-Infinity" mnemonicParsing="false" onAction="#loadImages" prefHeight="25.0" styleClass="Button" />
+            <TextField fx:id="UserMessage" prefHeight="25.0" prefWidth="339.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="SendButton" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" styleClass="Button" />
+            <Button fx:id="RegenerateButton" minWidth="-Infinity" mnemonicParsing="false" onAction="#regenerateLastMessage" prefHeight="25.0" styleClass="Button" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
